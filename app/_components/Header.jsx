@@ -5,7 +5,7 @@ function Header() {
   return (
     <div
     className='
-    justify-corner
+    justify-center
     flex
     '>
         <Image src='/logo.svg'
