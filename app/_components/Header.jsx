@@ -7,6 +7,7 @@ function Header() {
     className='
     justify-center
     flex
+    shadow-sm
     '>
         <Image src='/logo.svg'
         alt='logo'
