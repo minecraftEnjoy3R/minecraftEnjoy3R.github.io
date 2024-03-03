@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Hero() {
@@ -20,7 +21,7 @@ function Hero() {
 
           <a
             className="mt-8 inline-block rounded border border-gray-900 bg-gray-900
-            px-12 py-3 text-sm font-medium text-white transition hover:shadow
+            px-32 py-3 text-sm font-medium text-white transition hover:shadow
             focus:outline-none focus:ring"
           >
             Контакты
@@ -29,7 +30,7 @@ function Hero() {
           <p className="mt-4 text-gray-500 text-left">
             Пуляев Александр Николаевич:
             </p>
-            <p className="mt-4 text-gray-500 text-left">
+            <p className="mt-2 text-gray-500 text-left text-sm">
             +7 (950) 769-97-07
             </p>
         </div>
@@ -38,12 +39,13 @@ function Hero() {
       <div className="lg:col-span-2 lg:py-8">
         <ul className="grid grid-cols-2 gap-4">
           <li>
-            <a href="#" className="group block">
-              <img
-                src="/carp.jpg"
-                alt="carp"
-                className="aspect-square rounded object-cover"
-              />
+            <a className="group block">
+                <Image src='/carp.jpg'
+                alt='carp'
+                width={360}
+                height={270}
+                className='rounded'
+                />
 
               <div className="mt-3">
                 <h3
@@ -57,11 +59,13 @@ function Hero() {
           </li>
 
           <li>
-            <a href="#" className="group block">
-              <img
-                src="/schuka.jpg"
+            <a className="group block">
+              <Image src='/schuka.jpg'
                 alt="schuka"
-                className="aspect-square rounded object-cover"
+                width={360}
+                height={270}
+                className='rounded'
+                // className="aspect-square rounded object-cover"
               />
 
               <div className="mt-3">
