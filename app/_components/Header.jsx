@@ -9,8 +9,8 @@ function Header() {
     flex
     shadow-sm
     '>
-        <Image src='/logo.svg'
-        alt='logo'
+        <Image src='/logo2.svg'
+        alt='logo2'
         width={200}
         height={85}
         />
